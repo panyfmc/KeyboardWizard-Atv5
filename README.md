@@ -11,10 +11,12 @@ efeitos no combate.
 O desenvolvimento do jogo contará com a participação de vários desenvolvedores, tendo por criador o Alípio. Inicialmente, ele será desenvolvido por Gabriel Almeida e Paula Argôlo. 
 
 ## Justificativa da escolha dos Requisitos
- DURANTE A IMPLEMENTAÇÃO DESSE PROJETO, FORAM ESCOLHIDOS 2 REQUISITOS FUNCIONAIS E 2 NÃO-FUNCIONAIS JÁ definidos no escopo do PROJETO. A ESCOLHA FOI MEDIADA ENTRE GABRIEL E PAULA DE ACORDO COM O
- PROTÓTIPO "DESENVOLVIMENTO-SITE" QUE MOSTROU UMA PERSPECTIVA MAIS COMPLETA E CLARA, O QUE FACILITA UM MANEJO MAIS CLARO E FIEL AO PROJETO FINAL DESEJADO e na escolha de: 
- 
- [RF01] Criar Cadastro e Permitir Acesso --> O site deve permitir ao jogador que navegue pelas 5 telas (Jogo, wiki, perfil, tutorial e coleção) e exibir as respectivas informações presente em cada tela
+ Durante a implementação deste projeto, foram selecionados dois requisitos funcionais e dois não-funcionais previamente definidos no escopo. A escolha foi feita por Gabriel e Paula, considerando o protótipo "Desenvolvimento-Site", que ofereceu uma visão mais completa e clara. Isso facilitou um manejo mais preciso e fiel ao projeto final desejado, levando em conta isso os requisitos foram:
+### [RF01] Criar Cadastro e Permitir Acesso;
+O site deve permitir ao jogador que navegue pelas 5 telas (Jogo, wiki, perfil, tutorial e coleção) e exibir as respectivas informações presente em cada tela. No entanto, o foco principal será apenas na tela inicial, menu do jogo, já que o objetivo é desenvolver apenas 1 página web como citado acima.
+### [RF02] Navegação;
 O sistema deve permitir que um usuário crie um cadastro que manterá todo progresso feito durante o jogo e poderá ser acessado sem perda de dados em qualquer outro dispositivo. O jogo deve possuir alguma forma de aferir os dados relevantes e formatá-los em um arquivo.
+### [NFUS001] Telas responsivas;
 O software deve conseguir se adaptar para diferentes tamanhos de tela, permitindo que os usuários tenham acesso ao sistema em diferentes plataformas.
+### [NFIM007] Código comentado e catalogado;
 O código fonte deve ser mantido bem documentado e organizado por meio de comentários e catalogação.
