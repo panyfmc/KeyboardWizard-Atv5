@@ -1,0 +1,71 @@
+
+/*adiciona font do google fonts*/
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    font-family:"Pixelify Sans", sans-serif ;
+    z-index: 0;
+    background: url("/KeyboardWizard-Atv5/Login/Style/Images/Tela\ Durante\ jogo.png") repeat center center/cover;/*background já ajustado no center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh; /*ocupa toda tela*/
+}
+
+label{
+    color:white;
+}
+form {
+    width: 300px;
+    color: #fff;
+}
+input {
+    border: none;
+}
+/*botões*/
+input, button {
+    font-family:"Pixelify Sans", sans-serif ;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+}
+button {
+    font-family:"Pixelify Sans", sans-serif ;
+    cursor: pointer;
+}
+button:active {
+    color:black;
+}
+/*background opaco do email*/
+.content{
+    font-family:"Pixelify Sans", sans-serif ;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.542);
+    padding: 16px;
+}
+/*classe do botão de recuperar senha, não contém margem nem preenchimento*/
+.clear {
+    font-family:"Pixelify Sans", sans-serif ;
+    background: transparent;
+    border: none;
+    color: white;
+}
+/*classe do botão de entrar, ele é completo com margem e preenchimento*/
+.solid {
+    font-family:"Pixelify Sans", sans-serif ;
+    background: white;
+    border: none;
+    color: black;
+}
+/*classe do botão de registro, ele não é preenchido mas tem borda*/
+.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
