@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center; /* Alinha os itens ao topo */
+    place-items: center; /* centraliza os itens tanto horizontal quanto verticalmente */
+    background-image: url(./shift/Landingpage\ \(1\).png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px; /* Adiciona um espaçamento no topo para afastar do topo da viewport */
+    
+}
+
+.container-bottons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 900px; 
+    margin-right: 20px;
+    margin-bottom: 1600px; 
+    margin-left: 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+#fundo-botton {
+    width: 1420px;
+    height: 800px;
+    margin: auto;
+    background-position: top center;
+
+}
