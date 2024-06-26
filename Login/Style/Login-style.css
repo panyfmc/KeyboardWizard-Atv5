@@ -10,7 +10,7 @@
 body {
     font-family:"Pixelify Sans", sans-serif ;
     z-index: 0;
-    background: url("/KeyboardWizard-Atv5/Login/Style/Images/Tela\ Durante\ jogo.png") repeat center center/cover;/*background já ajustado no center*/
+    background: url("/Login/Style/Images/Tela\ Durante\ jogo.png") repeat center center/cover;/*background já ajustado no center*/
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -36,16 +36,19 @@ input, button {
 }
 button {
     font-family:"Pixelify Sans", sans-serif ;
-    cursor: pointer;
+    cursor:pointer;
 }
 button:active {
-    color:black;
+    opacity: 0.8;
+}
+button[disabled] {
+    opacity: 0.8;
 }
 /*background opaco do email*/
 .content{
     font-family:"Pixelify Sans", sans-serif ;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.542);
+    background-color: rgba(0, 0, 0, 0.439);
     padding: 16px;
 }
 /*classe do botão de recuperar senha, não contém margem nem preenchimento*/

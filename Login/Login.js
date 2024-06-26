@@ -1,16 +1,29 @@
+//função que deixa os botões ativados usando as funções para validar 
 function validateFields(){
+    const emailValid = isEmailValid();
+    document.getElementById("recover-password-button").disabled =! emailValid;
+    const passWordValid = isPasswordValid()
+    document.getElementById("login-button").disabled = !emailValid || !passWordValid;
+}
+//função que me diz se senha é valida, por id(bool)
+function isPasswordValid(){
+    password = document.getElementById("passWord").value;
+    if(!password){
+        return false;
+    }
+        return true;
+}
+//função que me diz se email é valido, id (bool)
+function isEmailValid(){
     const email = document.getElementById("email").value;
     if(!email){
-        document.getElementById('recover-password-button').disabled = true;
-    } else if(validateEmail(email)){
-        document.getElementById('recover-password-button').disabled = false;
+        return false;
     }
-    //pegar valor do campo de email
-    //verificar se o email não é vazio e se o email é valido
-    //se vdd então habilitar botao de recuperar senha
-    //se falso então desabilitar botão de recuperar senha  
-}
-//função que peguei na net que verifica se email é válido
+    return validateEmail(email);
+}  
+
+//função que verifica se email é válido para o campo(expressões regulares)
 function validateEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
 }
+

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-KeyboardWizard</title>
-    <link rel="stylesheet" href="/KeyboardWizard-Atv5/Login/Style/Login-style.css"/>
+    <link rel="stylesheet" href="/Login/Style/Login-style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -15,24 +15,24 @@
         <div class="content">
                 <div>
                     <label>Email</label>
-                    <input type="email" name="email" onchange="validateFields()" placeholder="seu@email.com"/>
+                    <input type="email" name="email" id="email" onchange="validateFields()" placeholder="seu@email.com"/>
                 <div>
                     <div><label>Senha</label></div>
-                    <input type="password" name="password" placeholder="Senha" />
+                    <input type="password" name="password" id="passWord" onchange="validateFields()" placeholder="Senha" />
                 </div>
                 <div>
                     <button type="button" class ="clear" disabled="true" id="recover-password-button" >Recuperar senha</button>
                 </div>
                 <div>
-                    <button type="button" class="solid" disabled="true" >Entrar</button>
+                    <button type="button" class="solid" id="login-button" disabled="true" >Entrar</button>
                 </div>
                 <div>
-                    <button type="button" class="outline">Registrar</button>
+                    <button type="button" id="recover-password-buttonS" class="outline">Registrar</button>
                 </div>
         </div>
     </form>
         
     <div class="OpacityStyle"></div>
 </body>
-<script src="Login.js"></script>
+<script src="/Login/Login.js"></script>
 </html>
