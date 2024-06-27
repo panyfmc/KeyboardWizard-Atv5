@@ -1,0 +1,45 @@
+
+/*adiciona font do google fonts*/
+.pixelify-sans-<uniquifier> {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  body {
+      font-family:"Pixelify Sans", sans-serif ;
+      z-index: 0;
+      background: url("/Conta/Style/Images/Tela\ Durante\ jogo.png") repeat center center/cover;/*background já ajustado no center*/
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      height: 100vh; /*ocupa toda tela*/
+  }
+  
+  form {
+      width: 300px;
+      color: #fff;
+  }
+  input {
+      border: none;
+  }
+  /*botões*/
+  input, button {
+      font-family:"Pixelify Sans", sans-serif ;
+      padding: 10px;
+      width: -webkit-fill-available;
+  }
+  button {
+      font-family:"Pixelify Sans", sans-serif ;
+      cursor:pointer;
+      margin-bottom: 10px;
+  }
+  
+  .form-field{
+      margin-bottom: 10px;
+  }
+  
+  h1{
+    color: #fff;
+  }

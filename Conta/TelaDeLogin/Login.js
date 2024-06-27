@@ -5,9 +5,17 @@ function onChangeEmail(){
     toggleEmailErros();
     togglePasswordErros();
 }
+//função que desabilita os botões de acordo com validade da senha/ exige mensagem de erro
 function onChangePassword(){
     toggleButtonsDisable();
     togglePasswordErros();
+}
+//função que redireciona usuario para tela de perfil
+function login(){
+    window.location.href = "/Conta/TelaDePerfil/TelaDePerfil.html"
+}
+function register(){
+    window.location.href = "/Conta/TelaDeRegistro/TelaDeRegistro.html"
 }
 //função que me diz se senha é valida, por id(bool)
 function isPasswordValid(){
