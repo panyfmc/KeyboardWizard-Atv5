@@ -1,4 +1,5 @@
-//função que deixa os botões desativados usando as funções para validar e pra mostrar ou esconder os erros
+//funções que desabilitam o botões de acordo com validade dos campos/ exige mensagem de erro
+//função que desabilita os botões de acordo com validade do email/ exige mensagem de erro
 function onChangeEmail(){
     toggleButtonsDisable();
     toggleEmailErros();
@@ -10,7 +11,7 @@ function onChangePassword(){
 }
 //função que me diz se senha é valida, por id(bool)
 function isPasswordValid(){
-    const password = document.getElementById("passWord").value;
+    const password = form.passWord().value;
     if(!password){
         return false;
     }
@@ -18,47 +19,40 @@ function isPasswordValid(){
 }
 //função que me diz se email é valido, id (bool)
 function isEmailValid(){
-    const email = document.getElementById("email").value;
+    const email = form.email().value;
     if(!email){
         return false;
     }
     return validateEmail(email);
 }  
 
-//função que verifica se email é válido para o campo(expressões regulares)
-function validateEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-}
-
 //função que monstra ou esconde erros do email
 function toggleEmailErros(){
-    const email = document.getElementById("email").value;
+    const email = form.email().value;
     //mensagem de email obrigatório
-    if(!email){
-        document.getElementById("email-required-error").style.display= "block";
-    }else{document.getElementById("email-required-error").style.display="none";
-
-    }
+    form.emailRequiredError().style.display = email ? "none" : "block";
     //mensagem de email inválido
-    if(isEmailValid(email)){
-        document.getElementById("email-invalid-error").style.display="none";
-    }else{
-        document.getElementById("email-invalid-error").style.display="block";
-    }
+    form.emailInvalidError().style.display = validateEmail(email) ? "none" : "block";
 }
 //função que mostra erro de validação de senha
 function togglePasswordErros(){
-    const password = document.getElementById("passWord").value;
-    if(!password){
-        document.getElementById("password-required-error").style.display="block";
-    }else{
-        document.getElementById("password-required-error").style.display="none";
-    }
+    const password = form.passWord().value;
+    form.passWordRequiredError().style.display = password ? "none" : "block";
 }
 //confere se a senha e o email são válidos 
 function toggleButtonsDisable(){
     const emailValid = isEmailValid();
-    document.getElementById("recover-password-button").disabled =! emailValid;
+    form.recoverPassword().disabled =! emailValid;
     const passWordValid = isPasswordValid()
-    document.getElementById("login-button").disabled = !emailValid || !passWordValid;
+    form.loginButton().disabled = !emailValid || !passWordValid;
+}
+
+const form = {
+    loginButton: () => document.getElementById("login-button"),
+    email: () => document.getElementById("email"),
+    emailInvalidError: () => document.getElementById("email-invalid-error"),
+    emailRequiredError: () => document.getElementById("email-required-error"),
+    passWord: () => document.getElementById("passWord"),
+    passWordRequiredError: () => document.getElementById("password-required-error"),
+    recoverPassword: () => document.getElementById("recover-password-button"),
 }
