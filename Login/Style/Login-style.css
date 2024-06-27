@@ -48,7 +48,7 @@ button[disabled] {
 .content{
     font-family:"Pixelify Sans", sans-serif ;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.439);
+    background-color: rgba(0, 0, 0, 0.479);
     padding: 16px;
 }
 /*classe do botão de recuperar senha, não contém margem nem preenchimento*/
@@ -72,3 +72,9 @@ button[disabled] {
     border: 1px solid white;
 }
 
+.error{
+color: #fff;
+font-family:"Pixelify Sans", sans-serif;
+background: red;
+display: none;
+}

@@ -1,13 +1,16 @@
-//função que deixa os botões ativados usando as funções para validar 
-function validateFields(){
-    const emailValid = isEmailValid();
-    document.getElementById("recover-password-button").disabled =! emailValid;
-    const passWordValid = isPasswordValid()
-    document.getElementById("login-button").disabled = !emailValid || !passWordValid;
+//função que deixa os botões desativados usando as funções para validar e pra mostrar ou esconder os erros
+function onChangeEmail(){
+    toggleButtonsDisable();
+    toggleEmailErros();
+    togglePasswordErros();
+}
+function onChangePassword(){
+    toggleButtonsDisable();
+    togglePasswordErros();
 }
 //função que me diz se senha é valida, por id(bool)
 function isPasswordValid(){
-    password = document.getElementById("passWord").value;
+    const password = document.getElementById("passWord").value;
     if(!password){
         return false;
     }
@@ -27,3 +30,35 @@ function validateEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
 }
 
+//função que monstra ou esconde erros do email
+function toggleEmailErros(){
+    const email = document.getElementById("email").value;
+    //mensagem de email obrigatório
+    if(!email){
+        document.getElementById("email-required-error").style.display= "block";
+    }else{document.getElementById("email-required-error").style.display="none";
+
+    }
+    //mensagem de email inválido
+    if(isEmailValid(email)){
+        document.getElementById("email-invalid-error").style.display="none";
+    }else{
+        document.getElementById("email-invalid-error").style.display="block";
+    }
+}
+//função que mostra erro de validação de senha
+function togglePasswordErros(){
+    const password = document.getElementById("passWord").value;
+    if(!password){
+        document.getElementById("password-required-error").style.display="block";
+    }else{
+        document.getElementById("password-required-error").style.display="none";
+    }
+}
+//confere se a senha e o email são válidos 
+function toggleButtonsDisable(){
+    const emailValid = isEmailValid();
+    document.getElementById("recover-password-button").disabled =! emailValid;
+    const passWordValid = isPasswordValid()
+    document.getElementById("login-button").disabled = !emailValid || !passWordValid;
+}
