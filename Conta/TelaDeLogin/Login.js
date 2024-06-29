@@ -12,12 +12,15 @@ function onChangePassword(){
 }
 //função que redireciona usuario para tela de perfil
 function login(){
+    showLoading();
     firebase.initializeApp(firebaseConfig);
     firebase.auth().signInWithEmailAndPassword(
         form.email().value,form.passWord().value
     ).then(response => {
+        hideLoading();
         window.location.href = "/Conta/TelaDePerfil/TelaDePerfil.html";
     }).catch(error => {
+        hideLoading();
         alert(getErrorMessage(error));
     })
 }
