@@ -12,10 +12,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <h1>Registro</h1>
-    </div>
+    <form>
+        <div class="content">
+            <div class="form-field">
+                <div><label>Email</label></div>
+                <input type="email" placeholder="seu@email.com" onchange="onChangeEmail()" id ="email"/>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email é inválido</div>
+            </div>
+            <div class="form-field">
+                <div><label>Confirmar email</label></div>
+                <input type="email" placeholder="Confirme seu@email.com" id= "confirmEmail"/>
+                <div class="error" id="email-doesnt-match-error">
+                    Email e confirmar email devem ser iguais
+                </div>
+            </div>
+            <div class="form-field">
+                <div><label>Senha</label></div>
+                <input type="password" placeholder="Senha" id="password"/>
+                <div class="error" id="password-required-error">
+                    Senha é obrigatória
+                </div>
+                <div class="error" id="password-required-error">
+                    - Senha deve tem pelo menos 8 caracteres<br>
+                    - Senha deve ter pelo menos 1 letra maiúscula<br>
+                    - Senha deve conter um caractere especial(ex: &$#@*_-)
+                </div>
+            </div>
+            <div class="form-field">
+                <div><label>Confirmar senha</label></div>
+                <input type="password" placeholder="Confirmar senha" id= "confirmPassword" />
+                <div class="error" id="password-doesnt-match-error">
+                    Senha e confirmar senha devem ser iguais
+                </div>
+            </div>
+            <div>
+                <button type="button" class="solid" disabled= "true" >Registrar</button>
+            </div>
+            <div>
+                <button type="button" class="clear">Login</button>
+            </div>
+        </div>
+    </form>
 </body>
+<script src ="/Conta/TelaDeRegistro/registro.js"
 <script src="/Conta/TelaDeLogin/Login.js"></script>
 <script src="/Conta/TelaDeLogin/Validations.js"></script>
 </html>
