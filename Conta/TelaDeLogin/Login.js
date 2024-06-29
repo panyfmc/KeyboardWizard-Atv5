@@ -3,7 +3,6 @@
 function onChangeEmail(){
     toggleButtonsDisable();
     toggleEmailErros();
-    togglePasswordErros();
 }
 //função que desabilita os botões de acordo com validade da senha/ exige mensagem de erro
 function onChangePassword(){
@@ -13,19 +12,21 @@ function onChangePassword(){
 //função que redireciona usuario para tela de perfil
 function login(){
     showLoading();
-    firebase.initializeApp(firebaseConfig);
     firebase.auth().signInWithEmailAndPassword(
         form.email().value,form.passWord().value
-    ).then(response => {
+    ).then(() => {
         hideLoading();
         window.location.href = "/Conta/TelaDePerfil/TelaDePerfil.html";
     }).catch(error => {
         hideLoading();
         alert(getErrorMessage(error));
-    })
+    });
 }
 //função que escolhe define o que vai ser exibido na mensagem de erro, a partir do código da fireBase
 function getErrorMessage(error){
+    if (error.code == "auth/wrong-password") {
+        return "Senha inválida";
+    }
     if(error.code == "auth/invalid-credential"){
         return "Usuário não encontrado.";
     }
@@ -68,11 +69,22 @@ function togglePasswordErros(){
 //confere se a senha e o email são válidos 
 function toggleButtonsDisable(){
     const emailValid = isEmailValid();
-    form.recoverPassword().disabled =! emailValid;
+    form.recoverpassword().disabled =! emailValid;
     const passWordValid = isPasswordValid()
     form.loginButton().disabled = !emailValid || !passWordValid;
 }
-
+//função que redireciona para recuperar a senha
+function recoverPassword() {
+    showLoading();
+    firebase.auth().sendPasswordResetEmail(form.email().value).then(() => {
+        hideLoading();
+        alert("Email enviado! Caso o email não tenha chegado, verifique se você concluiu o cadastro");
+    }).catch(error => {
+        hideLoading();
+        alert(getErrorMessage(error));
+    });
+}
+//armazena os elementos que são pegos pelo id
 const form = {
     loginButton: () => document.getElementById("login-button"),
     email: () => document.getElementById("email"),
@@ -80,5 +92,5 @@ const form = {
     emailRequiredError: () => document.getElementById("email-required-error"),
     passWord: () => document.getElementById("passWord"),
     passWordRequiredError: () => document.getElementById("password-required-error"),
-    recoverPassword: () => document.getElementById("recover-password-button"),
+    recoverpassword: () => document.getElementById("recover-password-button"),
 }
