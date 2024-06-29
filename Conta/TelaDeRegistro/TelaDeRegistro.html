@@ -29,14 +29,16 @@
             </div>
             <div class="form-field">
                 <div><label>Senha</label></div>
-                <input type="password" placeholder="Senha" id="password"/>
+                <input type="password" placeholder="Senha" id="password" onchange="onChangePassword()" />
                 <div class="error" id="password-required-error">
                     Senha é obrigatória
                 </div>
-                <div class="error" id="password-required-error">
-                    - Senha deve tem pelo menos 8 caracteres<br>
-                    - Senha deve ter pelo menos 1 letra maiúscula<br>
-                    - Senha deve conter um caractere especial(ex: &$#@*_-)
+                <div class="error" id="password-min-length-error">
+                    A senha deve conter:<br>
+                    - mínimo de 8 caracteres<br>
+                    - 1 letra maiúscula<br>
+                    - 1 caractere especial<br>
+                    (ex: Senha123# )
                 </div>
             </div>
             <div class="form-field">
@@ -47,10 +49,14 @@
                 </div>
             </div>
             <div>
-                <button type="button" class="solid" disabled= "true" >Registrar</button>
+                <button type="button" class="solid" disabled= "true" >
+                    Registrar
+                </button>
             </div>
             <div>
-                <button type="button" class="clear">Login</button>
+                <button type="button" class="clear">
+                    Login
+                </button>
             </div>
         </div>
     </form>
