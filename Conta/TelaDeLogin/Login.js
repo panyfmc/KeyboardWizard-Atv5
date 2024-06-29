@@ -12,8 +12,23 @@ function onChangePassword(){
 }
 //função que redireciona usuario para tela de perfil
 function login(){
-    window.location.href = "/Conta/TelaDePerfil/TelaDePerfil.html"
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth().signInWithEmailAndPassword(
+        form.email().value,form.passWord().value
+    ).then(response => {
+        window.location.href = "/Conta/TelaDePerfil/TelaDePerfil.html";
+    }).catch(error => {
+        alert(getErrorMessage(error));
+    })
 }
+//função que escolhe define o que vai ser exibido na mensagem de erro, a partir do código da fireBase
+function getErrorMessage(error){
+    if(error.code == "auth/invalid-credential"){
+        return "Usuário não encontrado.";
+    }
+    return error.message;
+}
+//função que passa para pagina de registro
 function register(){
     window.location.href = "/Conta/TelaDeRegistro/TelaDeRegistro.html"
 }

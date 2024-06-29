@@ -10,7 +10,7 @@
   body {
       font-family:"Pixelify Sans", sans-serif ;
       z-index: 0;
-      background: url("/Conta/Style/Images/Tela\ Durante\ jogo.png") repeat center center/cover;/*background já ajustado no center*/
+      background: url("/Conta/Style/Images/TelaFloresta.png") repeat center center/cover;/*background já ajustado no center*/
       display: flex;
       justify-content: center;
       align-items: center;  
@@ -42,4 +42,17 @@
   
   h1{
     color: #fff;
+  }
+  .navbar {
+    background-color: #b0b0b0;
+    box-sizing: content-box;
+    display: inline-flex;
+    height: 80px;
+    width: 1153px;
+    border: 17px solid #000000;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #878787;
+    border-right-color: #878787;
+    box-shadow: 0px 0px 0px 17px #000000;
   }
