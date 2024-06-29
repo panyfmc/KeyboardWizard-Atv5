@@ -8,7 +8,7 @@
 
 body {
     z-index: 0;
-    background: url("TelaFloresta.png") repeat center center/cover; 
+    background: url("./shift/TelaFloresta.png") repeat center center/cover; 
     display: flex;
     justify-content: center;
     align-items: top center;  
