@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+  font-family: 'fontbuttons';
+  src: url(./fontes/RetroGaming.ttf);
+}
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 body {
@@ -21,51 +24,59 @@ body {
     background-color: #b0b0b0;
     box-sizing: content-box;
     display: inline-flex;
-    height: 10vh;
-    width: 92%;
-    border: 17px solid #000000;
+    height: 12vh;
+    width: 80%;
+    border: 12px solid #000000;
     border-top-color: #ffffff;
     border-left-color: #ffffff;
     border-bottom-color: #878787;
     border-right-color: #878787;
-    box-shadow: 0px 0px 0px 17px #000000;
+    box-shadow: 0px 0px 0px 12px #000000;
     position: relative;
-    margin-top: 17px; /* Adicione um espaço superior de 20 pixels */
+    margin-top: 17px; 
+  }
+
+  .container {
+    top: 1vh;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
   }
 
 
   .wiki {
     font-size: 1.2em;
-    font-family: 'Press Start 2P', cursive;
-    width: 100px;
-    height: 40px;
+    font-family: 'fontbuttons', cursive;
+    width: 120px;
+    height: 50px;
     background: #2995C1;
-    border: 2px solid #000000;
-    top: 35px;
+    border: 0px;
+    top: 26px;
     left: 50%;
     position: absolute;
     text-align: center;
     user-select: none;
+    border: 0px;
     box-shadow: 
       inset -4px 2px 1px 1px #000000,
-      inset -4px -2px 1px 1px #000000,
-      inset 4px 0px 1px 1px #000000;   
+      inset -4px -2px 1px 1px #171717,
+      inset 4px 0px 1px 1px #151515;   
   }
   
   .wiki:hover {
-    background-color: #D5D908;
-    transition: background-color 0.7s;
     cursor: pointer;
   }
   
   .wiki:active {
-    top: 5px;
+    top: 4px;
     box-shadow: 
       -4px 2px 1px 1px #000000,
-      -4px -2px 1px 1px #000000,
-      4px 0px 1px 1px #000000; 
+      -4px -2px 1px 1px #171717,
+      4px 0px 1px 1px #151515;
+      background-color: #D5D908;
+      transition: background-color 0.1ms; 
   }
-  
+
   .wiki::after {
     content: '';
     background: black;
