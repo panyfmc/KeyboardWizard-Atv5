@@ -53,12 +53,12 @@
                 </div>
             </div>
             <div>
-                <button type="button" class="solid" disabled= "true" >
+                <button type="button" class="solid" disabled= "true" onclick="register()" id="register-button">
                     Registrar
                 </button>
             </div>
             <div>
-                <button type="button" class="clear">
+                <button type="button" class="clear" onclick="gologin()">
                     Login
                 </button>
             </div>
@@ -68,4 +68,10 @@
 <script src ="/Conta/TelaDeRegistro/registro.js"
 <script src="/Conta/TelaDeLogin/Login.js"></script>
 <script src="/Conta/TelaDeLogin/Validations.js"></script>
+
+<script src="/Conta/loading.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="/Conta/firebase-init.js"></script>
 </html>
