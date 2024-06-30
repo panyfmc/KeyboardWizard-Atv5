@@ -47,12 +47,11 @@ body {
   .wiki {
     font-size: 1.2em;
     font-family: 'fontbuttons', cursive;
-    width: 120px;
+    width: 130px;
     height: 50px;
     background: #2995C1;
-    border: 0px;
-    top: 26px;
-    left: 50%;
+    top: 27px;
+    left: -86vh;
     position: absolute;
     text-align: center;
     user-select: none;
@@ -68,7 +67,7 @@ body {
   }
   
   .wiki:active {
-    top: 4px;
+    top: 23px;
     box-shadow: 
       -4px 2px 1px 1px #000000,
       -4px -2px 1px 1px #171717,
