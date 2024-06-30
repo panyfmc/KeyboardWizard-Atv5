@@ -49,6 +49,7 @@ function validateEmailMatch() {
     const email = form.email().value;
     const confirmEmail = form.ConfirmEmail().value;
 
+
     form.ConfirmEmailDoesntMatchError().style.display = 
     email == confirmEmail ? "none" : "block";
 }
