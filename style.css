@@ -19,7 +19,22 @@ body {
     position: relative;
     
 }
+.menuVertical{
+  background-color: #08080871;
+  border-radius: 54px;
+  box-sizing: content-box;
+  font-family: "Roboto Slab", serif;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-align-last: center;
+  appearance: auto;
+  color: #ffffff;
+  height: 303px;
+  width: 392px;
+  border: 10px solid #cc6ce691;
 
+}
 .navbar {
     background-color: #b0b0b0;
     box-sizing: content-box;

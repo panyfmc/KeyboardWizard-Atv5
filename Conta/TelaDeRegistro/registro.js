@@ -105,7 +105,7 @@ function register(){
         email, password
     ).then(() => {
         hideLoading();//tirando animação
-        window.location.href = "/Conta/TelaDePerfil/TelaDePerfil.html";
+        window.location.href = "/index.html";
     }).catch(error =>{
         hideLoading();//tirando animação
         alert(getErrorMessageRegist(error));

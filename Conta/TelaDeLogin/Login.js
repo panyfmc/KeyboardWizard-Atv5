@@ -16,7 +16,7 @@ function login(){
         form.email().value,form.passWord().value
     ).then(() => {
         hideLoading();
-        window.location.href = "/Conta/TelaDePerfil/TelaDePerfil.html";
+        window.location.href = "/index.html";
     }).catch(error => {
         hideLoading();
         alert(getErrorMessage(error));
