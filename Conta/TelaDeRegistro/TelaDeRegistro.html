@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil-KeyboardWizard</title>
+    <link rel="stylesheet" href="/Conta/TelaDeRegistro/Style/style-registro.css"/>
+    <link rel="stylesheet" href="/Conta/Style/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="navbar">
+            <div class="container">
+                <button class="wiki">Wiki</button>
+                
+                <button class="wiki">Coleção</button>
+
+                <a href="/index.html">
+                    <button class="play">PLAY</button>
+                </a>
+
+                <button class="wiki">Tutorial</button>
+
+                <a href="/Conta/TelaDeLogin/TelaDeLogin.html">
+                    <button class="wiki">Conta</button>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    <form>
+        <div class="content">
+            <div class="form-field">
+                <div><label>Email</label></div>
+                <input type="email" placeholder="seu@email.com" 
+                    onchange="onChangeEmail()" id ="email"/>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email é inválido</div>
+            </div>
+            <div class="form-field">
+                <div><label>Confirmar email</label></div>
+                <input type="email" placeholder="Confirme seu@email.com" 
+                    id= "confirmEmail" onchange="onChangeConfirmEmail()"/>
+                <div class="error" id="email-doesnt-match-error">
+                    Email e confirmar email devem ser iguais
+                </div>
+            </div>
+            <div class="form-field">
+                <div><label>Senha</label></div>
+                <input type="password" placeholder="Senha(ex: Senha123# )" 
+                    id="password" onchange="onChangePassword()" />
+                <div class="error" id="password-required-error">
+                    Senha é obrigatória
+                </div>
+                <div class="error" id="password-min-length-error">
+                    *A senha deve conter:<br>
+                    - mínimo de 8 caracteres<br>
+                    - 1 letra maiúscula<br>
+                    - 1 letra minúscula<br>
+                    - 1 caractere especial<br>
+                </div>
+            </div>
+            <div class="form-field">
+                <div><label>Confirmar senha</label></div>
+                <input type="password" placeholder="Confirmar senha" 
+                    id= "confirmPassword" onchange="OnChangeConfirmPassword()"/>
+                <div class="error" id="password-doesnt-match-error">
+                    Senha e confirmar senha devem ser iguais
+                </div>
+            </div>
+            <div>
+                <button type="button" class="solid button" disabled= "true" onclick="register()" id="register-button">
+                    Registrar
+                </button>
+            </div>
+            <div>
+                <button type="button" class="clear button" onclick="gologin()">
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+<script src ="/Conta/TelaDeRegistro/registro.js"
+<script src="/Conta/TelaDeLogin/Login.js"></script>
+<script src="/Conta/TelaDeLogin/Validations.js"></script>
+
+<script src="/Conta/loading.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="/Conta/firebase-init.js"></script>
+</html>

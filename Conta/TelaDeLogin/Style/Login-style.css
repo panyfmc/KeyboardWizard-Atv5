@@ -1,0 +1,151 @@
+
+@font-face {
+    font-family: 'fontbuttons';
+    src: url(../../../fontes/RetroGaming.ttf);
+}
+
+/*adiciona font do google fonts*/
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    font-family:"Pixelify Sans", sans-serif ;
+    z-index: 0;
+    background: url("/Conta/Style/Images/TelaTijolo.png") repeat center center/cover;/*background já ajustado no center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh; /*ocupa toda tela*/
+}
+
+form {
+    width: 300px;
+    color: #fff;
+}
+input {
+    border: none;
+}
+/*botões*/
+input, .button {
+    font-family:"Pixelify Sans", sans-serif ;
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+.button {
+    font-family:"Pixelify Sans", sans-serif ;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+.form-field{
+    margin-bottom: 10px;
+}
+
+
+/*relacionado ao nav-bar*/
+@font-face {
+    font-family: 'fontbuttons';
+    src: url(./fontes/RetroGaming.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Font Title';
+    src: url(./fontes/Oldstar2.ttf);
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+main {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #b0b0b0;
+    padding: 25px 20px;
+    display: inline-flex;
+    height: 50px;
+    width: 80%;
+    border: 12px solid #000000;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #878787;
+    border-right-color: #878787;
+    box-shadow: 0px 0px 0px 12px #000000;
+    position: fixed;
+    margin-top: 40px;
+  }
+  
+  .container {
+    display: flex;
+    z-index: 10;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .wiki,
+.play {
+  font-size: 2rem;
+  font-family: 'fontbuttons', cursive;
+  padding: 10px 15px;
+  background: #2995C1;
+  text-align: center;
+  user-select: none;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow:
+    inset -4px 2px 1px 1px #000000,
+    inset -4px -2px 1px 1px #171717,
+    inset 4px 0px 1px 1px #151515;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.wiki:hover {
+  cursor: pointer;
+  font-family: 'fontbuttons', cursive;
+}
+
+.wiki::after {
+  position: absolute;
+  display: block;
+  font-size: 2rem;
+  font-family: 'fontbuttons', cursive;
+  border: 40px solid transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-image: url(https://i.imgur.com/CIBCfiF.png) 45 40 stretch;
+}
+
+.wiki:active {
+  bottom: 10px;
+  box-shadow:
+    -4px 2px 1px 1px #000000,
+    -4px -2px 1px 1px #171717,
+    4px 0px 1px 1px #151515;
+  background-color: #D5D908;
+  transition: background-color 0.1ms;
+}
+
+.play {
+  background-color: #D5D908;
+  color: #000;
+}
+
+.play:active {
+  bottom: 10px;
+  box-shadow:
+    -4px 2px 1px 1px #000000,
+    -4px -2px 1px 1px #171717,
+    4px 0px 1px 1px #151515;
+  background-color: #2995C1;
+  transition: background-color 0.1ms;
+}
