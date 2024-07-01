@@ -51,3 +51,6 @@ Durante o desenvolvimento, enfrentamos alguns desafios significativos:
 - **Refatoração da Primeira Tela:** Deve-se planejar a refatoração da primeira tela para cumprir o requisito não funcional de responsividade ([NFUS001] Telas responsivas).
 - **Criação de Perfil para o Usuário:** Como um novo requisito a ser acrescentado, deve-se considerar a implementação de um perfil para o usuário, permitindo uma personalização e uma experiência mais rica.
 - **Incremento das Páginas de Wiki e Tutorial:** Deve-se estudar como incrementar as páginas de Wiki e Tutorial sem comprometer a progressão do jogo, mantendo a identidade visual da página e evitando poluição visual.
+
+### Banco de Dados
+Foi utilizado o banco de dados do Firebase para armazenar as informações do jogo e dos usuários. Para obter acesso ao banco de dados, entre em contato com o colaborador GabrielDosSantosAlmeida.
