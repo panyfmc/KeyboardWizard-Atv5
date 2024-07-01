@@ -157,21 +157,3 @@ h1 span {
   color: #fff;
   border: none;
 }
-
-/*
-.botton1 {
-    padding: 15px 8px;
-    width: 120px;
-    color: black;
-    background-color: #0094D2;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    text-align: center;
-    user-select: none;
-    cursor: pointer;
-}
-
-.botton1:hover {
-    background-color: #D5D908;
-    transition: background-color 1s;
-}  */
