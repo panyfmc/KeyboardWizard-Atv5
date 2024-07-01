@@ -12,30 +12,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <div class="content">
-            <div class ="form-field">
-                <div><label>Email</label></div>
-                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com"/>
-                <div class="error" id="email-required-error">Email é obrigatório</div>
-                <div class="error" id="email-invalid-error">Email é inválido</div>
-            </div>    
-            <div class ="form-field">   
-                <div><label>Senha</label></div>
-                <input type="password" name="password" id="passWord" onchange="onChangePassword()" placeholder="Senha" />
-                <div class="error" id="password-required-error">Senha é obrigatória</div>
-            </div>    
-                <div>
-                    <button type="button" class ="clear"id="recover-password-button" onclick="recoverPassword()"disabled="true"  >Recuperar senha</button>
-                </div>
-                <div>
-                    <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
-                </div>
-                <div>
-                    <button type="button" id="recover-password-buttonS" class="outline" onclick="register()">Registrar</button>
-                </div>
+    <main>
+        <div class="navbar">
+            <div class="container">
+                <button class="wiki">Wiki</button>
+                
+                <button class="wiki">Coleção</button>
+
+                <a href="/index.html">
+                    <button class="play">PLAY</button>
+                </a>
+
+                <button class="wiki">Tutorial</button>
+
+                <a href="/Conta/TelaDeLogin/TelaDeLogin.html">
+                    <button class="wiki">Conta</button>
+                </a>
+            </div>
         </div>
-    </form>
+        
+    </main>
+    <form>
+            <div class="content">
+                <div class ="form-field">
+                    <div><label>Email</label></div>
+                    <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com"/>
+                    <div class="error" id="email-required-error">Email é obrigatório</div>
+                    <div class="error" id="email-invalid-error">Email é inválido</div>
+                </div>    
+                <div class ="form-field">   
+                    <div><label>Senha</label></div>
+                    <input type="password" name="password" id="passWord" onchange="onChangePassword()" placeholder="Senha" />
+                    <div class="error" id="password-required-error">Senha é obrigatória</div>
+                </div>    
+                    <div>
+                        <button type="button" class ="clear button"id="recover-password-button" onclick="recoverPassword()"disabled="true"  >Recuperar senha</button>
+                    </div>
+                    <div>
+                        <button type="button" class="solid button" id="login-button" disabled="true" onclick="login()">Entrar</button>
+                    </div>
+                    <div>
+                        <button type="button" id="recover-password-buttonS" class="outline button" onclick="register()">Registrar</button>
+                    </div>
+            </div>
+        </form>
 </body>
 
 
