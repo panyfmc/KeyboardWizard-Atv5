@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'fontbuttons';
-    src: url(../../../fontes/RetroGaming.ttf);
+    src: url(/KeyboardWizard-Atv5/fontes/RetroGaming.ttf);
 }
 
 /*adiciona font do google fonts*/
@@ -49,12 +49,12 @@ input, .button {
 /*relacionado ao nav-bar*/
 @font-face {
     font-family: 'fontbuttons';
-    src: url(./fontes/RetroGaming.ttf);
+    src: url(/KeyboardWizard-Atv5/fontes/RetroGaming.ttf);
   }
   
   @font-face {
     font-family: 'Font Title';
-    src: url(./fontes/Oldstar2.ttf);
+    src: url(/KeyboardWizard-Atv5/fontes/Oldstar2.ttf);
   }
   
   @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
