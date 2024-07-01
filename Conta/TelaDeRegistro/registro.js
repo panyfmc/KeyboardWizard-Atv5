@@ -113,7 +113,7 @@ function register(){
 }
 //função que redireciona pra página de Login
 function gologin(){
-    window.location.href = "/KeyboardWizard-Atv5/Conta/TelaDeLogin/TelaDeLogin.html";
+    window.location.href = "https://panyfmc.github.io/KeyboardWizard-Atv5/Conta/TelaDeLogin/TelaDeLogin.html";
 }
 //função para exibir error(usuário já cadastrado)
 function getErrorMessageRegist(error){

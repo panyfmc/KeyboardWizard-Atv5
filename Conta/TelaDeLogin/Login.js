@@ -34,7 +34,7 @@ function getErrorMessage(error){
 }
 //função que passa para pagina de registro
 function register(){
-    window.location.href = "/KeyboardWizard-Atv5/Conta/TelaDeRegistro/TelaDeRegistro.html"
+    window.location.href = "https://panyfmc.github.io/KeyboardWizard-Atv5/Conta/TelaDeRegistro/TelaDeRegistro.html"
 }
 //função que me diz se senha é valida, por id(bool)
 function isPasswordValid(){
