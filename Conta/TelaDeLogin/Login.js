@@ -16,7 +16,7 @@ function login(){
         form.email().value,form.passWord().value
     ).then(() => {
         hideLoading();
-        window.location.href = "/index.html";
+        window.location.href = "https://panyfmc.github.io/KeyboardWizard-Atv5/";
     }).catch(error => {
         hideLoading();
         alert(getErrorMessage(error));

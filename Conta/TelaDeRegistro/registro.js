@@ -105,7 +105,7 @@ function register(){
         email, password
     ).then(() => {
         hideLoading();//tirando animação
-        window.location.href = "/index.html";
+        window.location.href = "https://panyfmc.github.io/KeyboardWizard-Atv5/";
     }).catch(error =>{
         hideLoading();//tirando animação
         alert(getErrorMessageRegist(error));
