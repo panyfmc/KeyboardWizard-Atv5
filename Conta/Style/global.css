@@ -1,10 +1,10 @@
 body{
     margin: 0;
 }
-button:active {
+.button:active {
     opacity: 0.8;
 }
-button[disabled] {
+.button[disabled] {
     opacity: 0.8;
 }
 /*classe do botão de recuperar senha, não contém margem nem preenchimento*/
@@ -39,6 +39,7 @@ button[disabled] {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.479);
     padding: 16px;
+    margin-top: 20vh;
 }
 
 .loading{

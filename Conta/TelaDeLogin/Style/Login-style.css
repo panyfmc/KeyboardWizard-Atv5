@@ -68,7 +68,7 @@ main {
 
 .navbar {
     background-color: #b0b0b0;
-    padding: 45px 40px;
+    padding: 25px 20px;
     display: inline-flex;
     height: 50px;
     width: 80%;
@@ -79,7 +79,7 @@ main {
     border-right-color: #878787;
     box-shadow: 0px 0px 0px 12px #000000;
     position: fixed;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   .container {
