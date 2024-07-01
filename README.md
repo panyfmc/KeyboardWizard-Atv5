@@ -12,9 +12,9 @@ O desenvolvimento do jogo contará com a participação de vários desenvolvedor
 
 ## Justificativa da escolha dos Requisitos
  Durante a implementação deste projeto, foram selecionados dois requisitos funcionais e dois não-funcionais previamente definidos no escopo. A escolha foi feita por Gabriel e Paula, considerando o protótipo "Desenvolvimento-Site", que ofereceu uma visão mais completa e clara. Isso facilitou um manejo mais preciso e fiel ao projeto final desejado, levando em conta isso os requisitos foram:
-### [RF01] Criar Cadastro e Permitir Acesso;
-O site deve permitir ao jogador que navegue pelas 5 telas (Jogo, wiki, perfil, tutorial e coleção) e exibir as respectivas informações presente em cada tela. No entanto, o foco principal será apenas na tela inicial, menu do jogo, já que o objetivo é desenvolver apenas 1 página web como citado acima.
 ### [RF02] Navegação;
+O site deve permitir ao jogador que navegue pelas 5 telas (Jogo, wiki, perfil, tutorial e coleção) e exibir as respectivas informações presente em cada tela. No entanto, o foco principal será apenas na tela inicial, menu do jogo, já que o objetivo é desenvolver apenas 1 página web como citado acima.
+### [RF01] Criar Cadastro e Permitir Acesso;
 O sistema deve permitir que um usuário crie um cadastro que manterá todo progresso feito durante o jogo e poderá ser acessado sem perda de dados em qualquer outro dispositivo. O jogo deve possuir alguma forma de aferir os dados relevantes e formatá-los em um arquivo.
 ### [NFSG006] Acesso mediado por credenciais.
 A solução não pode ser implementada de forma a fornecer acesso não autorizado a bancos de dados contendo informações de terceiros.
